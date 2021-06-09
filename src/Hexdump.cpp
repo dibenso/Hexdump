@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
   CLIArg input_file = cli["--input"];
 
   if(input_file.resolved())
-    print_bytes(cli["-i"].value());
+    print_bytes(input_file.value());
   else
     cout << "No input file specified" << endl;
 

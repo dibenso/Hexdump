@@ -5,7 +5,9 @@ CLIArg::CLIArg(ArgType arg_type, const char *long_name, const char *short_name, 
   _arg_type(arg_type),
   _long_name(long_name),
   _short_name(short_name),
-  _description(description) {}
+  _description(description),
+  _value(""),
+  _resolved(false) {}
 void CLIArg::resolve(std::string value) {
   resolved();
 
