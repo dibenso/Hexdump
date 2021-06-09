@@ -17,8 +17,10 @@ class CLI {
     CLI(std::vector<CLIArg>* arg_vector, int argc, char** argv);
     CLI(CLIArg* arg_array, int argc, char** argv);
     void parse();
-    inline bool parsed();
+    inline bool parsed() { return _parsed; }
+    inline bool no_args() { _argc == 1; }
     CLIArg operator[](const char* arg_name);
+    std::string binary_name();
 };
 
 #endif

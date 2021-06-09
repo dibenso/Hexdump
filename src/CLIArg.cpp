@@ -1,3 +1,4 @@
+
 #include "CLIArg.h"
 
 CLIArg::CLIArg(ArgType arg_type, const char *long_name, const char *short_name, const char* description) :

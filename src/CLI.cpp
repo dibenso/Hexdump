@@ -54,7 +54,6 @@ void CLI::parse() {
 
   _parsed = true;
 }
-inline bool CLI::parsed() { return _parsed; }
 CLIArg CLI::operator[](const char* arg_name) {
   for(auto arg: _arg_set) {
     if(arg.second.long_name() == arg_name || arg.second.short_name() == arg_name)
@@ -63,3 +62,4 @@ CLIArg CLI::operator[](const char* arg_name) {
 
   return CLIArg(ArgType::NoArg, NULL, NULL, NULL);
 }
+std::string CLI::binary_name() { return _argv[0]; }
