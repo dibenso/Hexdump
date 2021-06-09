@@ -9,7 +9,7 @@ CLIArg::CLIArg(ArgType arg_type, const char *long_name, const char *short_name, 
   _value(""),
   _resolved(false) {}
 void CLIArg::resolve(std::string value) {
-  resolved();
+  resolve();
 
   _value = value;
 }
