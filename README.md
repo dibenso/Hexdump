@@ -5,6 +5,7 @@ A tool to dump and analyze binary files
 ```sh
 git clone git@github.com:dibenso/Hexdump.git
 cd Hexdump
+mkdir build
 cd build
 # replace -G option with your platforms generator
 # See: https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
