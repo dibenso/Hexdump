@@ -10,8 +10,8 @@ void CLI::init(int argc, char** argv) {
 CLI::CLI(std::vector<CLIArg>* arg_vector, int argc, char** argv) {
   init(argc, argv);
 
-  for(auto it = arg_vector->begin(); it != arg_vector->end(); ++it)
-    _arg_set.insert(std::make_pair(it->long_name(), *it));
+  for(auto& it : *arg_vector)
+    _arg_set.insert(std::make_pair(it.long_name(), it));
 }
 CLI::CLI(CLIArg* args, int argc, char** argv) {
   int length = sizeof(*args) / sizeof(args[0]);
@@ -55,7 +55,7 @@ void CLI::parse() {
   _parsed = true;
 }
 CLIArg CLI::operator[](const char* arg_name) {
-  for(auto arg: _arg_set) {
+  for(auto& arg: _arg_set) {
     if(arg.second.long_name() == arg_name || arg.second.short_name() == arg_name)
       return arg.second;
   }
