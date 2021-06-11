@@ -1,13 +1,18 @@
 cmake_minimum_required(VERSION 3.5)
 project(Hexdump)
 
-add_library(cli src/CLIArg.cpp src/CLI.cpp)
+add_library(hexdump src/Hexdump.cpp)
 
-add_executable(Hexdump src/Hexdump.cpp)
-target_link_libraries(Hexdump cli)
+add_executable(
+  Hexdump
+  src/Application.cpp
+  src/CLI.cpp
+  src/CLIArg.cpp
+  src/Hexdump.cpp
+)
 
 install(
-  TARGETS cli
+  TARGETS hexdump
   ARCHIVE
   DESTINATION lib
   COMPONENT libraries
@@ -19,7 +24,7 @@ install(
   COMPONENT applications
 )
 install(
-  FILES src/CLI.h src/CLIArg.h
+  FILES src/Hexdump.h
   DESTINATION include
   COMPONENT headers
 )
@@ -27,10 +32,7 @@ install(
 set (CPACK_PACKAGE_NAME "Hexdump")
 set (CPACK_PACKAGE_VENDOR "CMake.org")
 set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "Hexdump - A tool to dump and analyze binary files")
-set (CPACK_PACKAGE_VERSION "1.0.0")
-set (CPACK_PACKAGE_VERSION_MAJOR "1")
-set (CPACK_PACKAGE_VERSION_MINOR "0")
-set (CPACK_PACKAGE_VERSION_PATCH "0")
+set (CPACK_PACKAGE_VERSION "0.1.0")
 set (CPACK_PACKAGE_INSTALL_DIRECTORY "Hexdump")
 
 set (CPACK_COMPONENTS_ALL applications libraries headers)
