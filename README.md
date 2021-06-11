@@ -1,8 +1,9 @@
 # Hexdump     
 An application and library to dump and analyze binary files.      
 
-# Installing
-Hexdump can be built from source with CMake to generate an installer executable. See below. After building, check the `build` directory for the installer file `Hexdump-<version>-<architecture>.exe`.
+# Installing     
+Download the [Latest Release](https://github.com/dibenso/Hexdump/releases).     
+Hexdump can also be built from source with CMake to generate an installer executable. See below. After building, the installer file `Hexdump-<version>-<architecture>.exe` will be generated in the `build` directory.     
 
 # Running
 ```sh
