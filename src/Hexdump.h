@@ -11,6 +11,7 @@ class Hexdump {
     Hexdump();
     Hexdump(std::string input_file);
     Hexdump(const char* input_file);
+    void print_bytes();
 };
 
 #endif

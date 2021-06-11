@@ -6,14 +6,14 @@ set(HexdumpVersionMinor 1)
 set(HexdumpVersionPatch 0)
 set(
   LibrarySources
-  src/Hexdump.cpp  
+  src/Hexdump.cpp
 )
 set(
   ExecutableSources
   src/Application.cpp
   src/CLI.cpp
   src/CLIArg.cpp
-  src/Hexdump.cpp
+  ${LibrarySources}
 )
 
 add_library(hexdump ${LibrarySources})
