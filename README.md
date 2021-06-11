@@ -1,9 +1,9 @@
 # Hexdump     
 An application and library to dump and analyze binary files.      
 
-# Installing     
-Download the [Latest Release](https://github.com/dibenso/Hexdump/releases).     
-Hexdump can also be built from source with CMake to generate an installer executable. See below. After building, the installer file `Hexdump-<version>-<architecture>.exe` will be generated in the `build` directory.     
+# Download [![Hexdump Download Count](https://img.shields.io/github/downloads/cockatrice/cockatrice/total.svg)](https://tooomm.github.io/github-release-stats/?username=dibenso&repository=Hexdump)        
+
+Download the [Latest Release](https://github.com/dibenso/Hexdump/releases).         
 
 # Running
 ```sh
@@ -28,3 +28,4 @@ cmake -G "Visual Studio 16 2019" -A x64 ..
 * Change `Debug` to `Release`    
 * Build `Hexdump`     
 * Build `PACKAGE`     
+* The installer, `Hexdump-<version>-<architecture>.exe`, should be generated in the `build` directory
