@@ -1,7 +1,7 @@
 # Hexdump     
 An application and library to dump and analyze binary files.  
 
-![Alt text](screenshot.jpg?raw=true "Hexdump")
+![Hexdump](screenshot.jpg?raw=true "Hexdump")
 
 # Download [![Hexdump Download Count](https://img.shields.io/github/downloads/dibenso/Hexdump/total)](https://tooomm.github.io/github-release-stats/?username=dibenso&repository=Hexdump)        
 
