@@ -3,14 +3,25 @@
 
 #include <string>
 
-class Hexdump {
+typedef struct HexdumpOptions {
   private:
     std::string _input_file;
-    bool _has_input_file;
+    std::string _output_file;
+  public:
+    HexdumpOptions();
+    HexdumpOptions(std::string input_file, std::string output_file);
+    std::string input_file();
+    std::string output_file();
+    bool has_input_file();
+    bool has_output_file();
+} HexdumpOptions;
+
+class Hexdump {
+  private:
+    HexdumpOptions _options;
   public:
     Hexdump();
-    Hexdump(std::string input_file);
-    Hexdump(const char* input_file);
+    Hexdump(HexdumpOptions options);
     void print_bytes();
 };
 
