@@ -1,8 +1,8 @@
 # Hexdump     
-An application and library to dump and analyze binary files.  
+An application and library to dump and analyze binary files.
+![Hexdump build status](https://github.com/dibenso/Hexdump/actions/workflows/cmake.yml/badge.svg "Hexdump build status")
 
 ![Hexdump](screenshot.jpg?raw=true "Hexdump")
-![Hexdump build status](https://github.com/dibenso/Hexdump/actions/workflows/cmake.yml/badge.svg "Hexdump build status")
 
 # Download [![Hexdump Download Count](https://img.shields.io/github/downloads/dibenso/Hexdump/total)](https://tooomm.github.io/github-release-stats/?username=dibenso&repository=Hexdump)        
 
