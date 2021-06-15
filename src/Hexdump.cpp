@@ -7,6 +7,8 @@ HexdumpOptions::HexdumpOptions() : _input_file(""), _output_file("") {}
 HexdumpOptions::HexdumpOptions(std::string input_file, std::string output_file) :
   _input_file(input_file),
   _output_file(output_file) {}
+std::string HexdumpOptions::input_file() { return _input_file; }
+std::string HexdumpOptions::output_file() { return _output_file; }
 bool HexdumpOptions::has_input_file() { return !_input_file.empty() && _input_file != ""; }
 bool HexdumpOptions::has_output_file() { return !_output_file.empty() && _output_file != ""; }
 

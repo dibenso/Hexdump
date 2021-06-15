@@ -26,7 +26,8 @@ int main(int argc, char** argv) {
   CLIArg input_file = cli["--input"];
 
   if(input_file.resolved()) {
-    Hexdump hexdump = Hexdump(input_file.value());
+    HexdumpOptions options = HexdumpOptions(input_file.value(), "");
+    Hexdump hexdump = Hexdump(options);
     
     hexdump.print_bytes();
   }
