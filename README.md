@@ -2,6 +2,7 @@
 An application and library to dump and analyze binary files.  
 
 ![Hexdump](screenshot.jpg?raw=true "Hexdump")
+![Hexdump build status](https://github.com/dibenso/Hexdump/actions/workflows/cmake.yml/badge.svg "Hexdump build status")
 
 # Download [![Hexdump Download Count](https://img.shields.io/github/downloads/dibenso/Hexdump/total)](https://tooomm.github.io/github-release-stats/?username=dibenso&repository=Hexdump)        
 
