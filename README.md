@@ -1,6 +1,7 @@
-# Hexdump     
+# Hexdump
+![Hexdump build status](https://github.com/dibenso/Hexdump/actions/workflows/cmake.yml/badge.svg "Hexdump build status")        
+         
 An application and library to dump and analyze binary files.
-![Hexdump build status](https://github.com/dibenso/Hexdump/actions/workflows/cmake.yml/badge.svg "Hexdump build status")
 
 ![Hexdump](screenshot.jpg?raw=true "Hexdump")
 
